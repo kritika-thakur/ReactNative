@@ -18,10 +18,7 @@ export default class PictureList extends React.Component {
            <View style={{flex: 1, justifyContent: 'center'}}>{this.state.posts &&
                <FlatList data={this.state.posts}
                          renderItem={this.renderItem.bind(this)}
-                         keyExtractor={(item) => (item.id + '')}
-                         getItemLayout={(data, index) => (
-                            {length: 10, index}
-                          )}/>}{this.state.loading &&
+                         keyExtractor={(item) => (item.id + '')}/>}{this.state.loading &&
                <ActivityIndicator size="large" color="#f4511e"/>}</View>
        );
    }
