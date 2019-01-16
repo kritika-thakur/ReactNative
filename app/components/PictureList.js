@@ -20,7 +20,7 @@ export default class PictureList extends React.Component {
                          renderItem={this.renderItem.bind(this)}
                          keyExtractor={(item) => (item.id + '')}
                          getItemLayout={(data, index) => (
-                            {length: 10, offset: 0, index}
+                            {length: 10, index}
                           )}/>}{this.state.loading &&
                <ActivityIndicator size="large" color="#f4511e"/>}</View>
        );
