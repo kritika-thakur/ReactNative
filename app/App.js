@@ -19,12 +19,12 @@ const NavigationOptions = {
 //Create the router.
 const Router = createStackNavigator({
        //Name the screen
-       'RecycleTestComponent': {
+       'RNPrintExample': {
            //Link the Component
            screen: RecycleTestComponent,
            //Additional navigation options
            navigationOptions: {
-               title: 'RecycleTestComponent',
+               title: 'RNPrintExample',
                ...NavigationOptions
            }
        },
