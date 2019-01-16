@@ -1,6 +1,6 @@
 import React from 'react';
 import {createStackNavigator, createAppContainer } from "react-navigation";
-import RecycleTestComponent from "./components/RecycleTestComponent";
+import RNPrintExample from "./components/RNPrintExample";
 import PicturePreview from "./components/PicturePreview";
 export default class App extends React.Component {
    render() {
@@ -21,7 +21,7 @@ const Router = createStackNavigator({
        //Name the screen
        'RNPrintExample': {
            //Link the Component
-           screen: RecycleTestComponent,
+           screen: RNPrintExample,
            //Additional navigation options
            navigationOptions: {
                title: 'RNPrintExample',
